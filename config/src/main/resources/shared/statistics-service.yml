@@ -1,0 +1,23 @@
+security:
+  oauth2:
+    client:
+      clientId: 545de916d60720a137c1
+      clientSecret: f92ff54aea98eef05fac2b144a77eec0d1eccfd2
+      accessTokenUri: http://localhost:5000/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      database: piggymetrics
+      port: 27017
+
+server:
+  servlet:
+    context-path: /statistics
+  port: 7000
+
+rates:
+  url: https://api.exchangeratesapi.io
